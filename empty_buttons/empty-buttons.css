@@ -1,0 +1,65 @@
+/* knock off picocss styling */
+button[type="submit"],
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    width: auto;
+}
+
+.post-container {
+    max-width: 600px;
+    margin: 0.5rem auto;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 150px;
+    color:white;
+    background-color: #13171f;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.left-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+i.bi {
+    font-size: 1.2rem;
+}
+
+button svg {
+    fill: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+@media(prefers-color-scheme: dark) {
+
+    h1,
+    p,
+    label {
+        color: #f3f8ff;
+    }
+}
+
+/* https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

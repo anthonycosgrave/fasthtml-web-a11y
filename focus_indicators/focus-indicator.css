@@ -1,0 +1,16 @@
+:focus-visible {
+    outline:none;
+    border: 6px solid;
+}
+
+@media (prefers-color-scheme: light) { 
+    :focus-visible {
+        border-color: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) { 
+    :focus-visible {
+        border-color: white;
+    }
+}

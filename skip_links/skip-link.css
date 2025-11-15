@@ -1,0 +1,65 @@
+.skip-link {
+    /* Remove from normal flow to place manually */
+    position: absolute;
+    /* Move it out of view vertically (~40px if root font is 16px) */
+    top: -4.5rem;
+    /* Align to the left edge of the viewport */
+    left: 0;
+    /* High contrast background for visibility */
+    background: #000;
+    /* High contrast text color */
+    color: #fff;
+    /* take up some space */
+    padding: 1.5rem 1.5rem;
+    text-transform: uppercase;
+    /* Ensure it's above other elements */
+    z-index: 1000;
+    /* Smooth transition when it appears */
+    transition: top 0.2s ease;
+}
+
+/* Bring the link into view when focused via keyboard */
+.skip-link:focus-visible {
+    top: -2.5rem;
+    border: white 0.25rem solid;
+}
+
+/* 
+    alternative version based on the skip links on theguardian.com and microsoft.com,
+    is width of page.
+*/
+.skip-link-full-width {
+    position: absolute;
+    top: -4.5rem;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1000;
+    transition: top 0.2s ease-in-out;
+}
+
+/* Bring the link into view when focused via keyboard */
+.skip-link-full-width:focus-visible {
+    top: -2.5rem;
+    border: white 0.25rem solid;
+}
+
+
+
+
+/* NOT SKIP LINK RELATED! IGNORE! */
+nav+nav {
+    margin-top: 4px !important;
+}
+
+nav[aria-label="Primary"] ul li a::first-letter {
+    font-weight: 500;
+}
+
+nav+nav ul li a::first-letter {
+    font-weight: 500;
+}

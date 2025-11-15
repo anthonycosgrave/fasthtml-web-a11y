@@ -1,0 +1,26 @@
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+ul.horizontal-list li {
+    background-color: var(--pico-card-background-color);
+    box-shadow: var(--pico-card-box-shadow);
+    border-radius: 6px;
+
+    /* modified picocss 'aside' element styling */
+    padding: calc(var(--pico-nav-element-spacing-vertical) * .5) var(--pico-nav-element-spacing-horizontal);
+    list-style: none;
+}
+
+ul.horizontal-list li a {
+  text-decoration: none;
+}
+
+.search-input {
+  max-width: 200px;
+  display: inline-block;
+}

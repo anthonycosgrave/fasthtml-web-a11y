@@ -1,0 +1,43 @@
+.share-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 0;
+}
+
+.share-links a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.share-links a:hover,
+.share-links a:focus-visible {
+    transform: scale(1.1);
+}
+
+.share-links a img {
+    /* override picocss */
+    width: 3rem !important;
+    display: block;
+}
+
+.share-section {
+    margin-top: 2rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 0.25rem;
+    background-color:var(--pico-primary-inverse);
+}
+
+.share-section h3 {
+    color: #000;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

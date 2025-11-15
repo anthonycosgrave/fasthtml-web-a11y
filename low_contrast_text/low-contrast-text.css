@@ -1,0 +1,85 @@
+.natural-selection p.bad-selection::selection {
+    background-color: #181c25;
+}
+
+section.aaa-champion *::selection {
+    /* 
+        close imitation of default browser ::selection style
+        can't reset to browser default, picocss sets it and then it
+        can only be overridden.
+    */
+
+    /* chrome devtools say this is 4.5 AA compliant not AAA */
+    /* background-color: #475fcd;
+            color: #fff; */
+    background-color: #3757e7;
+    color: #fff;
+}
+
+.burnout-energy {
+    background-color: #ffff00;
+    color: #39ff14;
+}
+
+.fomo {
+    background-color: #ffcc00;
+    color: #ff6666;
+}
+
+.aa-level,
+.aa-level h2,
+.aa-level p {
+    color: #72757c;
+}
+
+@media (prefers-color-scheme: light) {
+    .clash-pop {
+        background-color: #0000cc;
+        color: #ff0000;
+    }
+
+    .concrete-fog {
+        background-color: #aaaaaa;
+        color: #c9cccc;
+    }
+
+    .squinters-delight,
+    .squinters-delight h2,
+    .squinters-delight p {
+        color: #a7a7a7;
+    }
+
+    .vampire {
+        background-color: #fdfdfd;
+        color: #eaeaea;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .clash-pop {
+        background-color: #ff00ff;
+        color: #00ffff;
+    }
+
+    .concrete-fog {
+        background-color: #aaaaaa;
+        color: #c9cccc;
+    }
+
+    .squinters-delight,
+    .squinters-delight h2,
+    .squinters-delight p {
+        color: #3a3939;
+    }
+
+    .aa-level,
+    .aa-level h2,
+    .aa-level p {
+        color: #838080;
+    }
+
+    .vampire {
+        background-color: #0d0d0d;
+        color: #2c2c2c;
+    }
+}

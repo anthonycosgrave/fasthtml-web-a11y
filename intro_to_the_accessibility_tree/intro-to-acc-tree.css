@@ -1,0 +1,12 @@
+#name, #email {
+    width:50%;
+}
+
+#comment {
+    width: 70%; 
+    max-width: 650px;
+}
+
+button[type=submit] {
+    width: 33%;
+}

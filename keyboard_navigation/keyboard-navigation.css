@@ -1,0 +1,32 @@
+ legend {
+     font-size: 1.25rem;
+     font-weight: bold;
+     line-height: 1.4;
+     margin-bottom: 0.75rem;
+     padding-bottom: 0.25rem;
+ }
+
+ /* for demo purposes - override pico css tooltip dotted bottom border */
+ [data-tooltip]:not(a, button, input, [role=button]) {
+     border-bottom: 1px transparent;
+ }
+
+ #hoverTrap {
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    border: 4px dashed red;
+    border-radius: 4px;
+ }
+
+ .hover-box {
+     border: 2px dashed var(--pico-primary, #999);
+     padding: 1rem;
+     border-radius: 0.5rem;
+     display: none;
+     width: 100%;
+     transition: opacity 0.3s ease;
+ }
+
+ #hoverTrap:hover .hover-box {
+     display: block;
+ }

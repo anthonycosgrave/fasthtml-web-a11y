@@ -1,0 +1,13 @@
+
+/* make it look like a heading element */
+.popular-post-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Navigation hidden to keep demo focused on headings */
+.header-wrap nav, footer nav {
+    display:none;
+}
