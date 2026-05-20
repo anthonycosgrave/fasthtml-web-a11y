@@ -1,0 +1,72 @@
+.divider {
+    margin: 1rem;
+}
+
+/* details and summary styling overrides for picocss */
+details.image-disclosure summary {
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+}
+
+details.image-disclosure summary::-webkit-details-marker {
+    display: none;
+}
+
+details.image-disclosure summary::marker {
+    display: none;
+}
+
+details.image-disclosure summary span {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--pico-primary);
+    margin-top: 0.25rem;
+    cursor: pointer;
+}
+
+details.image-disclosure summary span::before {
+    content: "▸ ";
+}
+
+details.image-disclosure[open] summary span::before {
+    content: "▾ ";
+}
+
+details.image-disclosure summary::after {
+    display: none;
+}
+
+/*
+ Div(
+        # Photo by Daniel Xavier: https://www.pexels.com/photo/man-wearing-shield-sunglasses-1195109/
+        Img(src='images/profile-2.png', alt=' ',
+            style='width:65px; height:70px; object-fit:cover; border-radius:8px;'),
+        Div(
+            Strong('@DisruptionViking'),
+            P('Five stars. Massive paradigm acceleration. Bravo!'),
+            style="font-size:x-large"
+        ),
+        style='display:grid; grid-template-columns:65px 1fr; gap:12px;'
+    ),
+    cls='growcr-msg'
+*/
+
+/* for visual purposes only */
+.growcr-msg {
+    list-style:none;
+    padding: 1.25rem;
+    border: 0.25rem solid;
+    border-radius: 1.25rem;
+}
+
+.growcr-profile-img {
+    width:65px; 
+    height:70px; 
+    object-fit:cover; 
+    border-radius:8px;
+}
+
+.growcr-text {
+    font-size:x-large;
+}

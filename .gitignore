@@ -10,6 +10,8 @@ __pycache__/
 # IDE
 .vscode/
 *.zone.identifier
+*Zone.Identifier
+*.Zone.Identifier
 
 # OS
 .DS_Store
