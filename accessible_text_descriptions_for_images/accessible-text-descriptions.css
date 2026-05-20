@@ -37,20 +37,6 @@ details.image-disclosure summary::after {
     display: none;
 }
 
-/*
- Div(
-        # Photo by Daniel Xavier: https://www.pexels.com/photo/man-wearing-shield-sunglasses-1195109/
-        Img(src='images/profile-2.png', alt=' ',
-            style='width:65px; height:70px; object-fit:cover; border-radius:8px;'),
-        Div(
-            Strong('@DisruptionViking'),
-            P('Five stars. Massive paradigm acceleration. Bravo!'),
-            style="font-size:x-large"
-        ),
-        style='display:grid; grid-template-columns:65px 1fr; gap:12px;'
-    ),
-    cls='growcr-msg'
-*/
 
 /* for visual purposes only */
 .growcr-msg {
